@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Shalev Argaman</title>
+    <script type="module"  src="./main.js"></script>
+  </head>
+  <body>  
+    <canvas id="bg" width="10" height="10"></canvas> 
+    <div id="main">
+      <dialog open>
+        <span>
+          This site is meant to be viewed on a computer, and not on mobile<br>
+          Move yourself with a/d or side arrow keys <br>
+          Drag balls with the mouse to move them through space <br>
+          Scroll to traverse the page
+        </span>
+        <span dir="rtl" style="font-family: Arial, Helvetica, sans-serif;">
+          אתר זה נועד לצפייה במחשב, ולא בפלאפון <br>
+          זוז בעזרת המקשים ג\ש או החיצים הצדדיים <br>
+          גרור כדורים בעזרת העכבר כדי להזיז אותם במרחב <br>
+          סובב את הגלגלת כדי לנוע בעמוד
+        </span>
+        <form method="dialog">
+          <button style="font-size: 1.5rem;">close</button>
+        </form>
+      </dialog>      
+      <h1>Portfolio - Shalev Argaman</h1>
+      <button id="english">English</button>
+      <button lang="he" id="hebrew">עברית</button>
+      <iframe src="./resume/english.html"
+      scrolling="no"
+      frameborder="0">
+    </iframe>
+    </div>
+    
+  </body>
+</html>

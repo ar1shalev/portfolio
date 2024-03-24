@@ -1,0 +1,45 @@
+html, body{
+  scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+}
+body::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+}
+#bg{
+  position: absolute;
+  top: 0;
+  left: 0;  
+  background-image: url(aether.jpg);
+  background-size: cover;
+  display: block;
+  z-index: -1;
+  width: 100%;
+}
+#main {
+  background-color: #ffffff;
+  margin-top: 94vh;
+}
+iframe {
+  width: 100%;
+  display: block;
+}
+button{
+  font-size: 2rem;
+}
+dialog{
+  top: 3vh;
+  background-color: #343434;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  line-height: 1.5rem;
+}
+span{
+  margin: 10px;
+  display: inline-flex;
+}
+h1{
+  height: 6vh;
+}

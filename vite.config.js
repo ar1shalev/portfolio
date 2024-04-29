@@ -4,8 +4,6 @@ import { resolve } from 'path';
 export default defineConfig({
   base: './',
   build: {
-    minify: false, // Disable minification
-    // Output directory for the build
     outDir: 'docs',
     // Set this to false to prevent clearing the output directory before building
     emptyOutDir: true,
@@ -15,8 +13,6 @@ export default defineConfig({
       // Preserve the directory structure when copying files
       input: {
         main: resolve(__dirname, "index.html"),
-        english: resolve(__dirname, "resume/english.html"),
-        hebrew: resolve(__dirname, "resume/hebrew.html"),
       },
       output: {
         assetFileNames: '[name][extname]',

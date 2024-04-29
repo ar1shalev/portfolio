@@ -15,15 +15,14 @@ body::-webkit-scrollbar{
   background-size: cover;
   display: block;
   z-index: -1;
-  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 #main {
-  background-color: #ffffff;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0 1%;
   margin-top: 94vh;
-}
-iframe {
-  width: 100%;
-  display: block;
 }
 button{
   font-size: 2rem;

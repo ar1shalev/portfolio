@@ -1,32 +1,23 @@
 import './style.css';
-let language = "english";
-const iframe = document.querySelector("iframe");
 
-function resizeIframe() {
-  iframe.style.height = iframe.contentWindow.document.documentElement.scrollHeight +10+ 'px';
-}
+const Hebrew = document.getElementById("Hebrew");
+const English = document.getElementById("English");
+Hebrew.style.display = "none";
 
-window.addEventListener("DOMContentLoaded", resizeIframe);
-iframe.addEventListener("change", resizeIframe);
-document.getElementById("hebrew").addEventListener("click",()=>{
- if (language!="hebrew") {
-  iframe.src = "./resume/hebrew.html"
-  language = "hebrew";
- }
+document.getElementById("hebrew_button").addEventListener("click",()=>{
+ Hebrew.style.display = "block";
+ English.style.display = "none";
 });
 
-document.getElementById("english").addEventListener("click",()=>{
-  if (language!="english") {
-    iframe.src = "./resume/english.html"
-   language = "english";
-  }
+document.getElementById("english_button").addEventListener("click",()=>{
+  Hebrew.style.display = "none";
+ English.style.display = "block";
 });
 
 window.addEventListener("resize", ()=>{
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize( window.innerWidth, window.innerHeight );
-  resizeIframe();
 })
 
 var dialog = document.querySelector('dialog');
@@ -194,7 +185,6 @@ function render_loop(time){
   camera.position.set(Math.sin(camera_degree)*10,10,Math.cos(camera_degree)*10);
   camera.lookAt(0,7,0);
   if (camera_speed!=0) {
-    console.log(delta_time);
     if (camera_speed<0) {
       camera_speed+=1;
     } else{
